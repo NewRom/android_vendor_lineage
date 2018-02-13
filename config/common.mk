@@ -301,11 +301,11 @@ ifdef LINEAGE_BUILDTYPE
     endif
 else
     # If LINEAGE_BUILDTYPE is not defined, set to UNOFFICIAL
-    LINEAGE_BUILDTYPE := UNOFFICIAL
+    LINEAGE_BUILDTYPE := jgcaap
     LINEAGE_EXTRAVERSION :=
 endif
 
-ifeq ($(LINEAGE_BUILDTYPE), UNOFFICIAL)
+ifeq ($(LINEAGE_BUILDTYPE), jgcaap)
     ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
         LINEAGE_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
     endif
@@ -357,7 +357,7 @@ LINEAGE_DISPLAY_VERSION := $(LINEAGE_VERSION)
 
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
-    ifneq ($(LINEAGE_BUILDTYPE), UNOFFICIAL)
+    ifneq ($(LINEAGE_BUILDTYPE), jgcaap)
         ifndef TARGET_VENDOR_RELEASE_BUILD_ID
             ifneq ($(LINEAGE_EXTRAVERSION),)
                 # Remove leading dash from LINEAGE_EXTRAVERSION
