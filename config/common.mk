@@ -130,13 +130,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     LineageSettingsProvider \
-    LineageSetupWizard \
     Eleven \
     ExactCalculator \
     Jelly \
     LockClock \
     Trebuchet \
-    Updater \
     WallpaperPicker \
     WeatherProvider
 
@@ -182,7 +180,8 @@ PRODUCT_PACKAGES += \
     unzip \
     vim \
     wget \
-    zip
+    zip \
+    busybox
 
 # Charger
 PRODUCT_PACKAGES += \
