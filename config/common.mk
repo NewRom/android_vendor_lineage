@@ -138,7 +138,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     Trebuchet \
     WallpaperPicker \
-    WeatherProvider
+    WeatherProvider \
+    LOSCoins
 
 # Exchange support
 PRODUCT_PACKAGES += \
